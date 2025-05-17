@@ -29,9 +29,7 @@ const Home = () => {
       return;
     }
     try {
-      await api.post(`/mybooks/${bookId}`, null, {
-        withCredentials: true,
-      });
+      await api.post(`/mybooks/${bookId}`);
       toast.success("Book added to your Collection");
     } catch (error) {
       toast.error(
