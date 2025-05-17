@@ -9,10 +9,12 @@ import { Provider } from "react-redux";
 import store from "./Redux/store.js";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <Provider store={store}>
-      <App />
-    </Provider>
-    <ToastContainer />
-  </BrowserRouter>
+  <StrictMode>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+      <ToastContainer />
+    </BrowserRouter>
+  </StrictMode>
 );
