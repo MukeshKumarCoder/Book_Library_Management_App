@@ -9,6 +9,7 @@ import { Provider } from "react-redux";
 import store from "./Redux/store.js";
 
 createRoot(document.getElementById("root")).render(
+<<<<<<< HEAD
   <StrictMode>
     <BrowserRouter>
       <Provider store={store}>
@@ -16,5 +17,14 @@ createRoot(document.getElementById("root")).render(
       </Provider>
       <ToastContainer />
     </BrowserRouter>
+=======
+   <StrictMode>
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+    <ToastContainer />
+  </BrowserRouter>
+>>>>>>> a9d0db64ca0512b18d05f9ded2104ee4d79589ba
   </StrictMode>
 );
