@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 8000;
 // middleware
 app.use(
   cors({
-    origin: "https://booklibrarymanagment.netlify.app/",
+    origin: "https://book-library-management-front-end.onrender.com",
     credentials: true,
   })
 );
